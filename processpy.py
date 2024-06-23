@@ -225,7 +225,7 @@ def classifyExtrema(data, indBounds = None, threshold = None):
     
 
     if (indMax-indMin) < 2:
-        raise ValueError('The data must have at least 3 values for extrema, but only has '+str(indMax-indMin)+' data value(s).')
+        raise ValueError(f'The data must have at least 3 values for extrema, but only has {indMax-indMin} data value(s).')
     
     if threshold is None:
         return stepWise()
